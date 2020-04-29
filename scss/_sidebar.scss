@@ -1,0 +1,19 @@
+.sidebar{
+    width: 4rem;
+    height: 100%;
+    background: $secoundaryColor;
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 5fr;
+    text-align: center;
+    padding-top: 2rem;
+}
+.dashboard,
+.member,
+.visits,
+.setting{
+    width: 30px;
+    height: 30px;
+    fill:$secoundarytextColor;
+}

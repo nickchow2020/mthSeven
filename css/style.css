@@ -63,14 +63,11 @@ h1 {
 /*
 // right section style
 */
-.avatar {
-  border-radius: 50%;
-  width: 40px; }
-
 .right {
   display: flex;
   align-items: center;
-  justify-content: space-around; }
+  justify-content: space-around;
+  box-shadow: -6px 0 5px -5px black; }
   .right p {
     font-family: "moranke";
     font-size: 2rem;
@@ -78,7 +75,31 @@ h1 {
     margin-left: .5rem;
     color: white; }
 
+.avatar {
+  border-radius: 50%;
+  width: 40px;
+  margin-left: .8rem; }
+
 .last {
   display: none; }
+
+.sidebar {
+  width: 4rem;
+  height: 100%;
+  background: #7a1300;
+  position: absolute;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 5fr;
+  text-align: center;
+  padding-top: 2rem; }
+
+.dashboard,
+.member,
+.visits,
+.setting {
+  width: 30px;
+  height: 30px;
+  fill: #d9d9d9; }
 
 /*# sourceMappingURL=style.css.map */

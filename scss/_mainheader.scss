@@ -54,14 +54,11 @@
 /*
 // right section style
 */ 
-.avatar{
-    border-radius: 50%;
-    width: 40px;
-}
 .right{
     display: flex;
     align-items:center ;
     justify-content:space-around;
+    box-shadow: -6px 0 5px -5px black;
     p{
         font-family: "moranke";
         font-size: 2rem;
@@ -69,6 +66,11 @@
         margin-left: .5rem;
         color:$primarytextColor;
     }
+}
+.avatar{
+    border-radius: 50%;
+    width: 40px;
+    margin-left: .8rem;
 }
 .last{
     display: none;
