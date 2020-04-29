@@ -1,0 +1,75 @@
+.main-header{
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-auto-rows: 4rem;
+}
+
+.left,
+.right{
+    background-color: $primaryColor;
+}
+/*
+// left section style
+*/ 
+.left{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.name{
+    color: $primarytextColor;
+    margin-left:2rem;
+    font-family: "kenyan-bd";
+    position: relative;
+    font-size: 1.5rem;
+    letter-spacing:2px;
+    strong{
+        color:$secoundarytextColor;
+    }
+}
+.tm{
+    font-family: "Open Sans";
+    font-size: 0.3rem;
+    position: absolute;
+}   
+.bell{
+    position: relative;
+    margin-right:1rem;
+}
+#bell{
+    width:35px;
+    height:35px;
+}
+.green_dot{
+    width: 10px;
+    height: 10px;
+    background: greenyellow;
+    border-radius: 50%;
+    position: absolute;
+    top:0;
+}
+
+/*
+// right section style
+*/ 
+.avatar{
+    border-radius: 50%;
+    width: 40px;
+}
+.right{
+    display: flex;
+    align-items:center ;
+    justify-content:space-around;
+    p{
+        font-family: "moranke";
+        font-size: 2rem;
+        margin-right:1rem;
+        margin-left: .5rem;
+        color:$primarytextColor;
+    }
+}
+.last{
+    display: none;
+}

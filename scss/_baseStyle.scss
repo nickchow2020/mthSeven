@@ -1,0 +1,25 @@
+// color variables 
+$primaryColor       : tomato;
+$secoundaryColor    : darken(tomato,40%);
+$primarytextColor   :white;
+$secoundarytextColor:darken(white,15%);
+
+
+// add font face
+@font-face{
+    font-family: "kenyan-bd";
+    src: url("../fonts/kenyan_coffee_bd.ttf");
+}
+@font-face{
+    font-family: "kenyan-rg";
+    src: url("../fonts/kenyan_coffee_rg.ttf");
+}
+@font-face{
+    font-family: "moranke";
+    src: url("../fonts/moranke.ttf");
+}
+// base element style
+h1{
+    padding: 0;
+    margin: 0;
+}
