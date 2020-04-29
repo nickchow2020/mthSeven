@@ -1,9 +1,14 @@
 // color variables 
-$primaryColor       : tomato;
-$secoundaryColor    : darken(tomato,40%);
-$primarytextColor   :white;
-$secoundarytextColor:darken(white,15%);
+$primaryColor        : tomato;
+$secoundaryColor     : darken(tomato,40%);
+$primarytextColor    :white;
+$secoundarytextColor :darken(white,15%);
+$thirdtextColor      :darken(white,70%);
+$lightgrey           :#F1F2F3;
+$bordergrey          :#C7CCD1;
 
+// image path
+$icon-path: "../icons";
 
 // add font face
 @font-face{
@@ -18,8 +23,15 @@ $secoundarytextColor:darken(white,15%);
     font-family: "moranke";
     src: url("../fonts/moranke.ttf");
 }
+@font-face{
+    font-family: "kenyan-rgnit";
+    src: url("../fonts/kenyan_coffee.ttf");
+}
 // base element style
-h1{
+h1,h2{
     padding: 0;
     margin: 0;
+}
+*{
+    box-sizing: border-box;
 }
