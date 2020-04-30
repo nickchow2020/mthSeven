@@ -10,7 +10,7 @@
 @font-face {
   font-family: "kenyan-rgnit";
   src: url("../fonts/kenyan_coffee.ttf"); }
-h1, h2 {
+h1, h2, a {
   padding: 0;
   margin: 0; }
 
@@ -90,16 +90,14 @@ h1, h2 {
   display: none; }
 
 .sidebar {
-  width: 4rem;
-  height: 100%;
+  width: 100%;
+  height: 4rem;
   background: #7a1300;
-  position: absolute;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 5fr;
-  text-align: center;
-  padding-top: 2rem;
-  z-index: 1000; }
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 1000;
+  text-align: center; }
 
 .dashboard,
 .member,
@@ -112,8 +110,7 @@ h1, h2 {
 .main-content {
   position: absolute;
   width: 100%;
-  height: 100%;
-  padding-left: 4rem; }
+  height: 100%; }
 
 .searchBar {
   width: 100%;

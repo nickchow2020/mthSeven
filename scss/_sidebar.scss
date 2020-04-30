@@ -1,14 +1,12 @@
 .sidebar{
-    width: 4rem;
-    height: 100%;
+    width: 100%;
+    height: 4rem;
     background: $secoundaryColor;
-    position: absolute;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 5fr;
-    text-align: center;
-    padding-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     z-index: 1000;
+    text-align: center;
 }
 .dashboard,
 .member,
