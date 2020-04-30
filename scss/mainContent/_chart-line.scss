@@ -1,0 +1,39 @@
+// line-chart header navigation style
+.trafic-wrap{
+    width: 96%;
+    margin:auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.display-mode{
+    display:flex;
+    justify-content: space-between;
+    font-family: "kenyan-rgnit";
+    li{
+        margin-left: 1rem;
+        width: 4rem;
+        a{
+            color:$thirdtextColor;
+            padding:  0.2rem 1rem;
+            &:focus{
+                background: $navChartHover ;
+                border-radius: 10px;
+                color: $primarytextColor;
+            }
+        }
+    }
+
+}
+.trafic-title{
+    font-family: "kenyan-rgnit";
+    color:$thirdtextColor;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+}
+
+// traficChart style
+#traficChart{
+    width: 96%;
+    margin: auto;
+}

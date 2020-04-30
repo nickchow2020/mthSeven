@@ -10,12 +10,21 @@
 @font-face {
   font-family: "kenyan-rgnit";
   src: url("../fonts/kenyan_coffee.ttf"); }
-h1, h2, a {
+h1, h2 {
   padding: 0;
   margin: 0; }
 
+a {
+  text-decoration: none; }
+
 * {
   box-sizing: border-box; }
+
+ul {
+  padding: 0;
+  margin: 0; }
+  ul li {
+    list-style-type: none; }
 
 .main-header {
   max-width: 100%;
@@ -177,5 +186,37 @@ h1, h2, a {
   width: 15px;
   height: 15px;
   stroke: white; }
+
+.trafic-wrap {
+  width: 96%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.display-mode {
+  display: flex;
+  justify-content: space-between;
+  font-family: "kenyan-rgnit"; }
+  .display-mode li {
+    margin-left: 1rem;
+    width: 4rem; }
+    .display-mode li a {
+      color: #4d4d4d;
+      padding: 0.2rem 1rem; }
+      .display-mode li a:focus {
+        background: #6783D5;
+        border-radius: 10px;
+        color: white; }
+
+.trafic-title {
+  font-family: "kenyan-rgnit";
+  color: #4d4d4d;
+  font-size: 1.2rem;
+  letter-spacing: 2px; }
+
+#traficChart {
+  width: 96%;
+  margin: auto; }
 
 /*# sourceMappingURL=style.css.map */

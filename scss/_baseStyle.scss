@@ -6,6 +6,7 @@ $secoundarytextColor :darken(white,15%);
 $thirdtextColor      :darken(white,70%);
 $lightgrey           :#F1F2F3;
 $bordergrey          :#C7CCD1;
+$navChartHover       :#6783D5;
 
 // image path
 $icon-path: "../icons";
@@ -28,10 +29,20 @@ $icon-path: "../icons";
     src: url("../fonts/kenyan_coffee.ttf");
 }
 // base element style
-h1,h2,a{
+h1,h2{
     padding: 0;
     margin: 0;
 }
+a{
+    text-decoration: none;
+}
 *{
     box-sizing: border-box;
+}
+ul{
+    padding:0;
+    margin: 0;
+    li{
+        list-style-type: none;
+    }
 }
