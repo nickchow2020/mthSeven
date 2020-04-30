@@ -154,4 +154,31 @@ h1, h2 {
     border: 1px solid #C7CCD1;
     background: url("../icons/icon-search.svg") no-repeat right white; }
 
+.alert {
+  width: 96%;
+  margin: auto;
+  background: tomato;
+  font-family: "kenyan-rgnit";
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3.2rem;
+  padding: 1rem 0; }
+  .alert strong {
+    font-family: "kenyan-rg";
+    margin-right: 1rem;
+    font-size: 1.5rem; }
+  .alert p {
+    margin-left: 2rem; }
+
+.close {
+  fill: white;
+  margin-right: 2rem;
+  width: 15px;
+  height: 15px;
+  stroke: white; }
+
 /*# sourceMappingURL=style.css.map */
