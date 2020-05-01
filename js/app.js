@@ -1,7 +1,25 @@
 /* ***********
+function to get all giving element siblings
+**************/
+let getSiblings = function (arr) {
+    let siblings = []; 
+    let sibling  = arr.parentNode.firstElementChild;
+    while (sibling) {
+        if (sibling.nodeType === 1 && sibling !== arr) {
+            siblings.push(sibling);
+        }
+        sibling = sibling.nextElementSibling;
+    }
+    return siblings;
+};
+
+
+
+
+/* ***********
  Traffic Button Stlye With jQuery when click
 **************/
-$(".trafic-wrap").on("click","ul li",function(){
+$(".trafic-wrap").on("click","ul li",function(e){
     $(this).addClass("isActive").siblings().removeClass("isActive");
 })
 
@@ -28,13 +46,32 @@ alert.addEventListener("click",(e)=>{
 /* ***********
 showing the line Chart separately when click it's buttons
 **************/
-const buttonsUl = document.querySelector(".display-mode");
-const lineChartArea = document.getElementById("traficChart");
-const chartHourly = document.querySelector(".chartHourly");
-const chartDaily = document.querySelector(".chartDaily");
-const chartWeekly = document.querySelector(".chartWeekly");
-const chartMonthly = document.querySelector(".chartMonthly");
+const lineChart = document.querySelector('.trafic-chart');
+const lineHour = document.querySelector('.chartHourly');
+const lineDaily = document.querySelector('.chartDaily');
+const lineWeekly = document.querySelector('.chartWeekly');
+const lineMonthly = document.querySelector('.chartMonthly')
 
-buttonsUl.addEventListener("click",(e)=>{
+lineWeekly.classList.add("show");
 
+lineChart.addEventListener("click",(e)=>{
+    if(e.target.tagName === "LI"){
+        if(e.target.classList.contains("hourly")){
+            lineHour.classList.add("show");
+            let lineHourSiblings = getSiblings(lineHour);
+            lineHourSiblings.forEach(e => e.classList.remove("show"))
+        }else if(e.target.classList.contains("daily")){
+            lineDaily.classList.add("show");
+            let lineDailySiblings = getSiblings(lineDaily);
+            lineDailySiblings.forEach(e => e.classList.remove("show")) 
+        }else if(e.target.classList.contains("weekly")){
+            lineWeekly.classList.add("show");
+            let lineWeeklySiblings = getSiblings(lineWeekly);
+            lineWeeklySiblings.forEach(e => e.classList.remove("show")) 
+        }else if(e.target.classList.contains("monthly")){
+            lineMonthly.classList.add("show");
+            let lineMonthlySiblings = getSiblings(lineMonthly);
+            lineMonthlySiblings.forEach(e => e.classList.remove("show")) 
+        }
+    }
 })
