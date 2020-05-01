@@ -1,6 +1,6 @@
 .alert{
     width: 96%;
-    margin:auto;
+    margin: .8rem auto;
     background: tomato;
     font-family: "kenyan-rgnit";
     color: $primarytextColor;
@@ -9,22 +9,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 3.2rem;
-    padding: 1rem 0;
+    height: 2rem;
+    padding: .5rem 1rem;
     strong{
         font-family: "kenyan-rg";
         margin-right: 1rem;
         font-size: 1.5rem;
     }   
-    p{
-        margin-left: 2rem;
+    a{
+        color:$primarytextColor ;
     }
-}
-
-.close{
-    fill:$primarytextColor;
-    margin-right: 2rem;
-    width: 15px;
-    height: 15px;
-    stroke: $primarytextColor;
 }

@@ -1,30 +1,27 @@
 // line-chart header navigation style
 .trafic-wrap{
-    width: 96%;
-    margin:auto;
+    width: 95%;
+    margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .display-mode{
     display:flex;
     justify-content: space-between;
     font-family: "kenyan-rgnit";
     li{
-        margin-left: 1rem;
-        width: 4rem;
-        a{
-            color:$thirdtextColor;
-            padding:  0.2rem 1rem;
-            &:focus{
-                background: $navChartHover ;
-                border-radius: 10px;
-                color: $primarytextColor;
-            }
-        }
+            text-align: center;
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            width: 5rem;
+            padding: .4rem 0;
+            border-radius: 5px;
     }
-
 }
+
 .trafic-title{
     font-family: "kenyan-rgnit";
     color:$thirdtextColor;
@@ -34,6 +31,18 @@
 
 // traficChart style
 #traficChart{
-    width: 96%;
+    width: 95%;
     margin: auto;
+}
+
+.isActive{
+    color: white;
+    background:$navChartbg;
+}
+// make LineChart Area Disappears
+.chartHourly,
+.chartDaily,
+.chartWeekly,
+.chartMonthly{
+    display: none;
 }

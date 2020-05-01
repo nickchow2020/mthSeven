@@ -6,7 +6,7 @@ $secoundarytextColor :darken(white,15%);
 $thirdtextColor      :darken(white,70%);
 $lightgrey           :#F1F2F3;
 $bordergrey          :#C7CCD1;
-$navChartHover       :#6783D5;
+$navChartbg          :#3174ED;
 
 // image path
 $icon-path: "../icons";
@@ -35,6 +35,7 @@ h1,h2{
 }
 a{
     text-decoration: none;
+    color:$thirdtextColor;
 }
 *{
     box-sizing: border-box;
