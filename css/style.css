@@ -224,4 +224,13 @@ ul {
 .show {
   display: block; }
 
+.chartBar {
+  width: 95%;
+  margin: auto; }
+  .chartBar p {
+    font-family: "kenyan-rgnit";
+    color: #4d4d4d;
+    font-size: 1.3rem;
+    letter-spacing: 2px; }
+
 /*# sourceMappingURL=style.css.map */
