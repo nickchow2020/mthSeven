@@ -1,0 +1,48 @@
+.userMessage{
+    height: 25rem;
+    width: 100%;
+    margin: auto;
+}
+.titleMessage{
+    font-family: "kenyan-rgnit";
+    color:$thirdtextColor;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+}
+
+.form{
+    margin: auto;
+    display: flex;
+    width: 95%;
+    flex-direction: column;
+    input{
+        height: 2.5rem;
+        border-radius: 5px;
+        border: solid $bordergrey  1px;
+        outline: none;
+        font-size: 1.2rem;
+        padding: 0 .5rem;
+    }
+    textarea{
+        border-radius: 5px;
+        border: solid $bordergrey  1px;
+        outline: none;
+        font-size: 1.2rem;
+        padding: 1rem .5rem;
+    }
+    button{
+        background: tomato;
+        outline: none;
+        height: 2.5rem;
+        border: none; 
+        color: $primarytextColor ;
+        font-size: 1.5rem;
+        font-family: "kenyan-rgnit";
+        letter-spacing: 3px;
+        border-radius: 5px;
+    }
+
+}
+.form > *{
+    margin-bottom: 1.2rem;
+}
