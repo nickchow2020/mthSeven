@@ -1,6 +1,10 @@
 .chartBar{
     width: 95%;
-    margin: auto;
+    border: solid $bordergrey  1px;
+    padding: .5rem 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
     p{
         font-family: "kenyan-rgnit";
         color:$thirdtextColor;

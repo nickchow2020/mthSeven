@@ -1,0 +1,114 @@
+.socialStates{
+    width: 95%;
+    margin: auto;
+    p{
+        font-family: "kenyan-rgnit";
+        color:$thirdtextColor;
+        font-size: 1.3rem;
+        letter-spacing: 2px;
+    }
+}
+/*
+// twittr style
+*/
+.twitter{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $lightgrey;
+    border: solid $bordergrey  1px;
+    margin: 1rem 0;
+}   
+.twitterData{
+    display: flex;
+    justify-content: space-around;
+    p{
+        margin-left: 6rem;
+        font-family: "kenyan-bd";
+    }
+}
+.twitter svg{
+    width: 30px;
+    height: 30px;
+    margin-top: 7px;
+    fill: $primarytextColor;
+}
+.twi-logo{
+    background: $primaryColor;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+/*
+// facebook style
+*/
+.facebook{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $lightgrey;
+    border: solid $bordergrey  1px;
+    margin: 1rem 0;
+}
+.facebookData{
+    display: flex;
+    justify-content: space-around;
+    p{
+        margin-left: 6rem;
+        font-family: "kenyan-bd";
+    }
+}
+.facebook-logo{
+    width: 50px;
+    height: 50px;
+    background: $primaryColor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.facebook svg{
+    width: 40px;
+    height: 50px;
+    fill: $primarytextColor;
+    margin-left: -20px;
+}
+/*
+// google style
+*/
+.google{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $lightgrey;
+    border: solid $bordergrey  1px;
+    margin: 1rem 0;
+}
+.google-logo{
+    width: 50px;
+    height: 50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $primaryColor;
+    border-radius: 50%;
+}
+.google svg{
+    width: 80px;
+    height: 30px;
+    fill:$primarytextColor;
+}
+.googleData{
+    display: flex;
+    justify-content: space-around;
+    p{
+        margin-left: 6rem;
+        font-family: "kenyan-bd";
+    }
+}
