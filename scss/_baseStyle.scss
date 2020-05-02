@@ -29,6 +29,10 @@ $img-path: "../images";
     font-family: "kenyan-rgnit";
     src: url("../fonts/kenyan_coffee.ttf");
 }
+@font-face{
+    font-family: "messageFont";
+    src: url("../fonts/massenetSemiBold-Bold.otf");
+}
 // base element style
 h1,h2{
     padding: 0;

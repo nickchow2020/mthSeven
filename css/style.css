@@ -10,6 +10,9 @@
 @font-face {
   font-family: "kenyan-rgnit";
   src: url("../fonts/kenyan_coffee.ttf"); }
+@font-face {
+  font-family: "messageFont";
+  src: url("../fonts/massenetSemiBold-Bold.otf"); }
 h1, h2 {
   padding: 0;
   margin: 0; }
@@ -443,5 +446,46 @@ ul {
 
 .form > * {
   margin-bottom: 1.2rem; }
+
+.activity {
+  width: 95%;
+  margin: auto;
+  padding: .5rem 1rem; }
+
+.activity-title {
+  font-family: "kenyan-rgnit";
+  color: #4d4d4d;
+  font-size: 1.3rem;
+  letter-spacing: 2px; }
+
+.recentDetail {
+  display: flex;
+  align-items: center; }
+
+.actMessage {
+  margin-left: 1rem; }
+  .actMessage p {
+    padding: 0;
+    margin: 0;
+    font-family: "messageFont";
+    color: #4d4d4d; }
+  .actMessage span {
+    display: block;
+    margin: 0;
+    padding: 0;
+    font-family: "kenyan-rg";
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+    color: #4d4d4d; }
+
+.recentAct {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+  border-bottom: solid #C7CCD1 1px;
+  margin-top: 1rem; }
+  .recentAct a {
+    color: tomato;
+    font-size: 1.3rem; }
 
 /*# sourceMappingURL=style.css.map */
