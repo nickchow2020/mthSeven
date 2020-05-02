@@ -49,6 +49,7 @@
       </a>
   </nav>
   <main class="main-content">
+    <!-- searchBar -->
         <div class="searchBar">
             <div class="bar-title">
                 <p>Dashboard</p>
@@ -57,8 +58,14 @@
                 <input type="text">
             </div>
         </div>
+        <!-- searchBar -->
+
+        <!-- alert -->
         <div id="alert">
         </div>
+        <!-- alert -->
+
+        <!-- trafic-chart -->
         <section class="trafic-chart">
           <div class="trafic-wrap">
             <div class="trafic-title">
@@ -86,6 +93,9 @@
           </div>
          </div>
         </section>
+        <!-- trafic-chart -->
+
+        <!-- Bar and Doughnut -->
         <section>
           <div class="chartBar">
             <p>Daily Traffic</p>
@@ -96,6 +106,9 @@
             <canvas id="doughnutChartArea"></canvas>
           </div>
       </section>
+      <!-- Bar and Doughnut -->
+
+      <!-- socialStates -->
       <section class="socialStates">
         <p>Social States</p>
         <div class="twitter">
@@ -132,18 +145,67 @@
           </div>
         </div>
       </section>
-      <section>
-        <h3>New Member</h3>
-        <div>
-         <img src="" alt="">
-         <div>
-           <p></p>
-           <a href=""></a>
-           <p></p>
+      <!-- socialStates -->
+
+      <!-- New Member Section -->
+      <!-- newMember -->
+      <section class="newMember">
+        <p  class="memberTitle">New Member</p>
+          <div class="memberInfo">
+            <div class="info">
+              <img src="images/member-1.jpg" alt="member1" class="member">
+              <div class="nameEmail">
+                <p class="memberName">Victoria Chamberssss</p>
+                <a href="mailto:victoria.chambers80@gmail.com" class="email">victoria.chambers80@gmail.com</a>
+              </div>
+            </div>
+            <p class="date">05/02/2020</p>
          </div>
+         <div class="memberInfo">
+          <div class="info">
+            <img src="images/member-2.jpg" alt="member2" class="member">
+            <div class="nameEmail">
+              <p class="memberName">Charlotte Byrd</p>
+              <a href="mailto:charlotte_byrd80@gmail.com" class="email">charlotte_byrd80@gmail.com</a>
+            </div>
+          </div>
+          <p class="date">05/01/2020</p>
+       </div>
+       <div class="memberInfo">
+        <div class="info">
+          <img src="images/member-3.jpg" alt="member3" class="member">
+          <div class="nameEmail">
+            <p class="memberName">Theodore Wood</p>
+            <a href="emailto:theodore_wood80@gmail.com" class="email">theodore_wood80@gmail.com</a>
+          </div>
         </div>
+        <p class="date">04/28/2020</p>
+     </div>
+     <div class="memberInfo">
+      <div class="info">
+        <img src="images/member-4.jpg" alt="member4" class="member">
+        <div class="nameEmail">
+          <p class="memberName">William Ovilard</p>
+          <a href="emailto:william_ovilard80@gmail.com" class="email">william_ovilard80@gmail.com</a>
+        </div>
+      </div>
+      <p class="date">04/30/2020</p>
+      </div>
+      <!-- newMember -->
+      <!-- message user-->
+      <p class="titleMessage">Message User</p>
+      <form action="post">
+        <input type="text">
+        <textarea name="" id="" cols="30" rows="10">
+
+        </textarea>
+        <div class="btn">
+          <button>Send</button>
+        </div>
+      </form>
       </section>
-    
+      <!-- message user -->
+    <!-- New Member Section -->
 
   </main>
   <script src="js/lineChart.js"></script>

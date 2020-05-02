@@ -1,0 +1,49 @@
+.newMember{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+
+.memberTitle{
+    font-family: "kenyan-rgnit";
+    color:$thirdtextColor;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+}
+
+
+.info{
+    width: 70%;
+    display:flex;
+    align-items: center;
+    p{
+        padding: 0;
+        margin: 0;
+        font-family: "moranke";
+        font-size: 1.5rem;
+    }
+}
+.member{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.nameEmail{
+    margin-left: 1rem;
+    a{
+        color:$primaryColor;
+    }
+}
+
+.memberInfo{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:.5rem 0 1rem 0;
+    border-bottom: solid $bordergrey 1px;
+}
+.date{
+    font-family: "kenyan-rg";
+}
