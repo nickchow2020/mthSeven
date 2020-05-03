@@ -41,6 +41,11 @@
 #bell{
     width:35px;
     height:35px;
+    fill:$primarytextColor;
+    transition: 0.3s;
+    &:hover{
+        transform: scale(1.1);
+    }
 }
 .green_dot{
     width: 10px;
