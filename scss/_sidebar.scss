@@ -9,10 +9,13 @@
     text-align: center;
 }
 .dashboard,
-.member,
+.members,
 .visits,
-.setting{
+.settings{
     width: 30px;
     height: 30px;
     fill:$secoundarytextColor;
+    &:hover{
+        fill:$primarytextColor;
+    }
 }

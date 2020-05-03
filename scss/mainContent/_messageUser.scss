@@ -40,6 +40,10 @@
         font-family: "kenyan-rgnit";
         letter-spacing: 3px;
         border-radius: 5px;
+        cursor: pointer;
+        &:hover{
+            background: $secoundaryColor;
+        }
     }
 }
 .form > *{

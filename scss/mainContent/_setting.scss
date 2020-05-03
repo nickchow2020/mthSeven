@@ -1,0 +1,121 @@
+.setting{
+    width: 95%;
+    margin: auto;
+}
+.settingTitle{
+    font-family: "kenyan-rgnit";
+    color:$thirdtextColor;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+}
+
+// Toggle with both Notification
+.notifiCheck{
+    width: 100%;
+    height: 35px;
+    background: $primaryColor;
+    -webkit-appearance:none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: 0 0 1px #C9BEB5;
+    &:checked{
+        background: $thirdtextColor;
+    }
+}
+.notifiCheck:before{
+    position: absolute;
+    z-index: 2;
+    content: "";
+    width: 35px;
+    height: 35px;
+    background: $primarytextColor ;
+    border-radius: 50%;
+    box-shadow: 0 0 2px 1px $secoundaryColor ;
+    transform: scale(1.1);
+    left: 0;
+    transition: .4s;
+}
+.notifiCheck:checked::before{
+    left: 75px;
+}
+.toggleWrapper{
+    position: relative;
+    width: 110px;
+    display: flex;
+    align-items: center;
+    label{
+        position: absolute;
+        font-size: 28px;
+        font-family: "kenyan-rgnit";
+        pointer-events: none;
+        color:$primarytextColor;
+    }
+}
+.onbtn{
+    right:0;
+    margin-right: .5rem;
+}
+.offbtn{
+    left: 0;
+    margin-left: .5rem;
+}
+.notification{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    p{
+        font-family: "messageFont";
+        font-size: 1.1rem;
+        color: $thirdtextColor;
+        margin-right:1.5rem;
+    }
+}
+// Selector Style
+.bottomWrap{
+    width: 95%;
+    margin: auto;
+}
+.timezone{
+ width: 100%;
+ height: 3rem;
+ border: solid $bordergrey 1px;
+ outline: none;
+ background: $lightgrey;
+ font-size: 1.2rem;
+ color:$thirdtextColor;
+ margin: auto;
+ cursor: pointer;
+}
+
+// Button Styles
+.save,
+.cancal{
+    width: 45%;
+    height: 2.5rem;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    color:$primarytextColor;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+.btnBottom{
+    margin: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    font-family: "kenyan-rgnit";
+}
+.save{
+    background: $primaryColor;
+    &:hover{
+        background: $secoundaryColor;
+    }
+}
+.cancal{
+    background: $thirdtextColor;
+    &:hover{
+        background: $secoundaryColor;
+    }
+}

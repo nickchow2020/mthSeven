@@ -113,12 +113,17 @@ ul {
   text-align: center; }
 
 .dashboard,
-.member,
+.members,
 .visits,
-.setting {
+.settings {
   width: 30px;
   height: 30px;
   fill: #d9d9d9; }
+  .dashboard:hover,
+  .members:hover,
+  .visits:hover,
+  .settings:hover {
+    fill: white; }
 
 .main-content {
   position: absolute;
@@ -442,7 +447,10 @@ ul {
     font-size: 1.5rem;
     font-family: "kenyan-rgnit";
     letter-spacing: 3px;
-    border-radius: 5px; }
+    border-radius: 5px;
+    cursor: pointer; }
+    .form button:hover {
+      background: #7a1300; }
 
 .form > * {
   margin-bottom: 1.2rem; }
@@ -487,5 +495,116 @@ ul {
   .recentAct a {
     color: tomato;
     font-size: 1.3rem; }
+
+.setting {
+  width: 95%;
+  margin: auto; }
+
+.settingTitle {
+  font-family: "kenyan-rgnit";
+  color: #4d4d4d;
+  font-size: 1.3rem;
+  letter-spacing: 2px; }
+
+.notifiCheck {
+  width: 100%;
+  height: 35px;
+  background: tomato;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 20px;
+  box-shadow: 0 0 1px #C9BEB5; }
+  .notifiCheck:checked {
+    background: #4d4d4d; }
+
+.notifiCheck:before {
+  position: absolute;
+  z-index: 2;
+  content: "";
+  width: 35px;
+  height: 35px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 0 2px 1px #7a1300;
+  transform: scale(1.1);
+  left: 0;
+  transition: .4s; }
+
+.notifiCheck:checked::before {
+  left: 75px; }
+
+.toggleWrapper {
+  position: relative;
+  width: 110px;
+  display: flex;
+  align-items: center; }
+  .toggleWrapper label {
+    position: absolute;
+    font-size: 28px;
+    font-family: "kenyan-rgnit";
+    pointer-events: none;
+    color: white; }
+
+.onbtn {
+  right: 0;
+  margin-right: .5rem; }
+
+.offbtn {
+  left: 0;
+  margin-left: .5rem; }
+
+.notification {
+  display: flex;
+  justify-content: space-between;
+  width: 70%; }
+  .notification p {
+    font-family: "messageFont";
+    font-size: 1.1rem;
+    color: #4d4d4d;
+    margin-right: 1.5rem; }
+
+.bottomWrap {
+  width: 95%;
+  margin: auto; }
+
+.timezone {
+  width: 100%;
+  height: 3rem;
+  border: solid #C7CCD1 1px;
+  outline: none;
+  background: #F1F2F3;
+  font-size: 1.2rem;
+  color: #4d4d4d;
+  margin: auto;
+  cursor: pointer; }
+
+.save,
+.cancal {
+  width: 45%;
+  height: 2.5rem;
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none; }
+
+.btnBottom {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  font-family: "kenyan-rgnit"; }
+
+.save {
+  background: tomato; }
+  .save:hover {
+    background: #7a1300; }
+
+.cancal {
+  background: #4d4d4d; }
+  .cancal:hover {
+    background: #7a1300; }
 
 /*# sourceMappingURL=style.css.map */
