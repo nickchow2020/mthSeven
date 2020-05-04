@@ -17,3 +17,10 @@ body{
         "mainContent mainContent"
     ;
 }
+
+@media (min-width: 768px){
+    body{
+        grid-template-columns: 1fr 7fr;
+        grid-template-areas: "mainHeader";
+    }
+}

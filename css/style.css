@@ -95,7 +95,7 @@ ul {
     border-radius: 50%;
     right: 0; }
 
-.sidebar {
+.iconBarWrapper {
   width: 100%;
   background: #7a1300;
   display: grid;
@@ -625,5 +625,10 @@ body {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 4rem 4rem auto;
   grid-template-areas: "mainHeader mainHeader" "sideBar sideBar" "mainContent mainContent"; }
+
+@media (min-width: 768px) {
+  body {
+    grid-template-columns: 1fr 7fr;
+    grid-template-areas: "mainHeader"; } }
 
 /*# sourceMappingURL=style.css.map */
