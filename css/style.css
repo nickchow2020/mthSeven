@@ -36,15 +36,21 @@ ul {
   grid-template-columns: 10fr 5fr;
   padding-left: 1.5rem; }
 
-.left,
-.right {
+.left {
   color: white;
   display: flex;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  margin-right: 1rem; }
 
 .right {
-  width: 100%; }
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin: 5px 0;
+  box-shadow: -2px 0px 0px 0px #4d4d4d; }
   .right span {
     display: none; }
   .right h2 {
@@ -95,9 +101,11 @@ ul {
     border-radius: 50%;
     right: 0; }
 
+.sidebar {
+  background: #7a1300; }
+
 .iconBarWrapper {
   width: 100%;
-  background: #7a1300;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 4rem;
@@ -621,14 +629,81 @@ ul {
   grid-area: mainContent; }
 
 body {
+  max-width: 1550px;
+  margin: auto;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-template-rows: 4rem 4rem auto;
-  grid-template-areas: "mainHeader mainHeader" "sideBar sideBar" "mainContent mainContent"; }
-
-@media (min-width: 768px) {
-  body {
-    grid-template-columns: 1fr 7fr;
-    grid-template-areas: "mainHeader"; } }
+  grid-template-areas: "mainHeader" "sideBar" "mainContent"; }
+  @media (min-width: 768px) {
+    body {
+      grid-template-columns: 1fr 10fr;
+      grid-template-rows: 4rem auto;
+      grid-template-areas: "mainHeader mainHeader" "sideBar mainContent"; }
+      body .sidebar {
+        height: 100%; }
+      body .iconBarWrapper {
+        display: flex;
+        flex-direction: column; }
+      body .iconbar {
+        width: 60%;
+        margin-top: 2rem; }
+      body .right h2 {
+        font-size: 2rem; }
+      body .right span {
+        display: inline-block;
+        margin-left: 1rem; }
+      body .chartBar,
+      body .doughnutChart {
+        width: 50%; }
+      body .chartBar {
+        border-left: none;
+        border-right: none; }
+      body .doughnutChart {
+        border-right: none; }
+      body .responseChart {
+        width: 95%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between; }
+      body .twitter,
+      body .facebook,
+      body .google {
+        width: 30%;
+        border-radius: 10px; }
+      body .twitterData,
+      body .facebookData,
+      body .googleData {
+        display: inline-block; }
+        body .twitterData p,
+        body .facebookData p,
+        body .googleData p {
+          margin: .5rem; }
+      body .socialWrap {
+        width: 100%;
+        display: flex;
+        justify-content: space-between; } }
+  @media (min-width: 1024px) {
+    body .sidebar {
+      max-width: 90px; }
+    body .memberandmessage,
+    body .actandset {
+      width: 45%; }
+    body .actandset {
+      display: flex;
+      flex-direction: column; }
+    body .setting {
+      margin-top: auto;
+      margin-bottom: .7rem;
+      margin-left: 0;
+      height: 22rem; }
+    body .activity {
+      margin: 0; }
+    body .btnBottom {
+      margin-top: 4.5rem; }
+    body .recentAct {
+      margin-top: 2.2rem; }
+    body .botWrap {
+      display: flex; } }
 
 /*# sourceMappingURL=style.css.map */
