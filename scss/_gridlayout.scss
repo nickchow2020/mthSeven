@@ -1,11 +1,19 @@
 .main-header{
     grid-area: mainHeader;
 }
+.sidebar{
+    grid-area: sideBar;
+}
+.main-content{
+    grid-area: mainContent;
+}
 body{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 4rem;
+    grid-template-rows: 4rem 4rem auto;
     grid-template-areas: 
         "mainHeader mainHeader"
+        "sideBar sideBar"
+        "mainContent mainContent"
     ;
 }

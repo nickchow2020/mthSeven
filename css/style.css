@@ -101,7 +101,7 @@ ul {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 4rem;
-  z-index: 1000;
+  z-index: 2;
   text-align: center; }
 
 .dashboard,
@@ -128,11 +128,11 @@ ul {
   fill: white; }
 
 .main-content {
-  position: absolute;
   width: 100%;
   margin: auto;
   display: grid;
-  grid-template-columns: 1fr; }
+  grid-template-columns: 1fr;
+  z-index: 6; }
 
 .searchBar {
   width: 100%;
@@ -614,10 +614,16 @@ ul {
 .main-header {
   grid-area: mainHeader; }
 
+.sidebar {
+  grid-area: sideBar; }
+
+.main-content {
+  grid-area: mainContent; }
+
 body {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 4rem;
-  grid-template-areas: "mainHeader mainHeader"; }
+  grid-template-rows: 4rem 4rem auto;
+  grid-template-areas: "mainHeader mainHeader" "sideBar sideBar" "mainContent mainContent"; }
 
 /*# sourceMappingURL=style.css.map */
