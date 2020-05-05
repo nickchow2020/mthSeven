@@ -493,8 +493,7 @@ ul {
 
 .activity {
   width: 95%;
-  margin: auto;
-  padding: .5rem 1rem; }
+  margin: auto; }
 
 .activity-title {
   font-family: "kenyan-rgnit";
@@ -632,7 +631,6 @@ ul {
   outline: none; }
 
 .btnBottom {
-  margin: 1rem 0;
   display: flex;
   justify-content: space-between;
   font-family: "kenyan-rgnit"; }
@@ -681,6 +679,8 @@ body {
       body .right span {
         display: inline-block;
         margin-left: 1rem; }
+      body .btnBottom {
+        margin: 2rem; }
       body .chartBar,
       body .doughnutChart {
         width: 50%; }
@@ -716,22 +716,23 @@ body {
       max-width: 90px; }
     body .memberandmessage,
     body .actandset {
-      width: 45%; }
+      width: 48%; }
     body .actandset {
       display: flex;
       flex-direction: column; }
     body .setting {
       margin-top: auto;
-      margin-bottom: .7rem;
       margin-left: 0;
       height: 22rem; }
     body .activity {
       margin: 0; }
-    body .btnBottom {
-      margin-top: 4.5rem; }
     body .recentAct {
       margin-top: 2.2rem; }
     body .botWrap {
-      display: flex; } }
+      display: flex; }
+    body #sendBtn {
+      margin-top: 1rem; }
+    body .btnBottom {
+      margin-bottom: 0; } }
 
 /*# sourceMappingURL=style.css.map */

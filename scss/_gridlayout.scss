@@ -45,6 +45,9 @@ body{
                 margin-left: 1rem;
             }
         }
+        .btnBottom{
+            margin: 2rem;
+        }
 
         // Bar and Doughnut layout
         .chartBar,
@@ -93,7 +96,7 @@ body{
         }
         .memberandmessage,
         .actandset{
-            width: 45%;
+            width: 48%;
         }
         .actandset{
             display:flex;
@@ -101,15 +104,12 @@ body{
         }
         .setting{
             margin-top: auto;
-            margin-bottom: .7rem;
+            // margin-bottom: .7rem;
             margin-left:0;
             height: 22rem;
         }
         .activity{
             margin:0;
-        }
-        .btnBottom{
-            margin-top: 4.5rem;
         }
         .recentAct{
             margin-top:2.2rem;
@@ -117,7 +117,12 @@ body{
         .botWrap{
             display: flex;
         }
-        
+        #sendBtn{
+            margin-top:1rem;
+        }
+        .btnBottom{
+             margin-bottom: 0;
+        }
     }
 
 }
