@@ -84,7 +84,8 @@ ul {
 .bell {
   width: 35px;
   height: 35px;
-  position: relative; }
+  position: relative;
+  cursor: pointer; }
   .bell:hover svg {
     transition: .4s;
     transform: scale(1.2); }
@@ -233,7 +234,8 @@ ul {
 .display-mode {
   display: flex;
   justify-content: space-between;
-  font-family: "kenyan-rgnit"; }
+  font-family: "kenyan-rgnit";
+  cursor: pointer; }
   .display-mode li {
     text-align: center;
     display: inline-block;
@@ -601,6 +603,10 @@ ul {
 .bottomWrap {
   width: 95%;
   margin: auto; }
+  .bottomWrap p {
+    font-family: "messageFont";
+    font-size: 1.1rem;
+    color: #4d4d4d; }
 
 .timezone {
   width: 100%;
