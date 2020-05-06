@@ -1,4 +1,5 @@
-.newMember{
+.newMember,
+.activity{
     width: 95%;
     margin-left: auto;
     margin-right: auto;
@@ -6,7 +7,8 @@
 }
 
 
-.memberTitle{
+.memberTitle,
+.activity-title{
     font-family: "kenyan-rgnit";
     color:$thirdtextColor;
     font-size: 1.3rem;
@@ -30,11 +32,21 @@
     height: 40px;
     border-radius: 50%;
 }
-.nameEmail{
+.nameEmail,
+.activityStates{
+    height: 4rem;
     margin-left: 1rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
     a{
         color:$primaryColor;
     }
+}
+.activityStates p{
+    color: $thirdtextColor;
+    font-family: "kenyan-rgnit";
+    font-size: 1.3rem;
 }
 
 .memberInfo{
@@ -44,6 +56,16 @@
     padding:.5rem 0 1rem 0;
     border-bottom: solid $bordergrey 1px;
 }
+
+
+
 .date{
     font-family: "kenyan-rg";
+}
+.arrow{
+    font-size: 1.2rem;
+    cursor: pointer;
+    &:hover{
+        color: $primaryColor;
+    }
 }

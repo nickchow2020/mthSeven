@@ -403,13 +403,15 @@ ul {
     margin-left: 6rem;
     font-family: "kenyan-bd"; }
 
-.newMember {
+.newMember,
+.activity {
   width: 95%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 10px; }
 
-.memberTitle {
+.memberTitle,
+.activity-title {
   font-family: "kenyan-rgnit";
   color: #4d4d4d;
   font-size: 1.3rem;
@@ -430,10 +432,21 @@ ul {
   height: 40px;
   border-radius: 50%; }
 
-.nameEmail {
-  margin-left: 1rem; }
-  .nameEmail a {
+.nameEmail,
+.activityStates {
+  height: 4rem;
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .nameEmail a,
+  .activityStates a {
     color: tomato; }
+
+.activityStates p {
+  color: #4d4d4d;
+  font-family: "kenyan-rgnit";
+  font-size: 1.3rem; }
 
 .memberInfo {
   display: flex;
@@ -445,12 +458,23 @@ ul {
 .date {
   font-family: "kenyan-rg"; }
 
-.userMessage {
-  height: 25rem;
-  width: 100%;
-  margin: auto; }
+.arrow {
+  font-size: 1.2rem;
+  cursor: pointer; }
+  .arrow:hover {
+    color: tomato; }
 
-.titleMessage {
+.userMessage,
+.setting {
+  height: 27rem;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem; }
+
+.titleMessage,
+.settingTitle {
   font-family: "kenyan-rgnit";
   color: #4d4d4d;
   font-size: 1.3rem;
@@ -490,56 +514,6 @@ ul {
 
 .form > * {
   margin-bottom: 1.2rem; }
-
-.activity {
-  width: 95%;
-  margin: auto; }
-
-.activity-title {
-  font-family: "kenyan-rgnit";
-  color: #4d4d4d;
-  font-size: 1.3rem;
-  letter-spacing: 2px; }
-
-.recentDetail {
-  display: flex;
-  align-items: center; }
-
-.actMessage {
-  margin-left: 1rem; }
-  .actMessage p {
-    padding: 0;
-    margin: 0;
-    font-family: "messageFont";
-    color: #4d4d4d; }
-  .actMessage span {
-    display: block;
-    margin: 0;
-    padding: 0;
-    font-family: "kenyan-rg";
-    letter-spacing: 1px;
-    font-size: 0.9rem;
-    color: #4d4d4d; }
-
-.recentAct {
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 1rem;
-  border-bottom: solid #C7CCD1 1px;
-  margin-top: 1rem; }
-  .recentAct a {
-    color: tomato;
-    font-size: 1.3rem; }
-
-.setting {
-  width: 95%;
-  margin: auto; }
-
-.settingTitle {
-  font-family: "kenyan-rgnit";
-  color: #4d4d4d;
-  font-size: 1.3rem;
-  letter-spacing: 2px; }
 
 .notifiCheck {
   width: 100%;
@@ -601,7 +575,9 @@ ul {
 
 .bottomWrap {
   width: 95%;
-  margin: auto; }
+  margin: auto;
+  display: flex;
+  flex-direction: column; }
   .bottomWrap p {
     font-family: "messageFont";
     font-size: 1.1rem;
@@ -628,7 +604,8 @@ ul {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  outline: none; }
+  outline: none;
+  margin-top: 2.5rem; }
 
 .btnBottom {
   display: flex;
@@ -720,12 +697,29 @@ body {
     body .actandset {
       display: flex;
       flex-direction: column; }
+    body .activity,
+    body .newMember {
+      margin: 0;
+      border: solid #C7CCD1 1px;
+      padding: 1rem;
+      width: 100%; }
+    body .userMessage,
     body .setting {
-      margin-top: auto;
-      margin-left: 0;
-      height: 22rem; }
+      border: solid #C7CCD1 1px; }
+    body .newMember {
+      border-left: none;
+      border-right: none;
+      border-bottom: none; }
     body .activity {
-      margin: 0; }
+      border-right: none;
+      border-bottom: none; }
+    body .userMessage {
+      border-left: none;
+      border-right: none;
+      border-bottom: none; }
+    body .setting {
+      border-right: none;
+      border-bottom: none; }
     body .recentAct {
       margin-top: 2.2rem; }
     body .botWrap {

@@ -1,14 +1,3 @@
-.setting{
-    width: 95%;
-    margin: auto;
-}
-.settingTitle{
-    font-family: "kenyan-rgnit";
-    color:$thirdtextColor;
-    font-size: 1.3rem;
-    letter-spacing: 2px;
-}
-
 // Toggle with both Notification
 .notifiCheck{
     width: 100%;
@@ -75,6 +64,8 @@
 .bottomWrap{
     width: 95%;
     margin: auto;
+    display: flex;
+    flex-direction: column;
     p{
         font-family: "messageFont";
         font-size: 1.1rem;
@@ -105,6 +96,7 @@
     border-radius: 5px;
     cursor: pointer;
     outline: none;
+    margin-top: 2.5rem;
 }
 .btnBottom{
     display: flex;

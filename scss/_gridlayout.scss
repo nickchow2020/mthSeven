@@ -102,15 +102,36 @@ body{
             display:flex;
             flex-direction: column;
         }
+        .activity,
+        .newMember{
+            margin:0;
+            border: solid $bordergrey 1px;
+            padding: 1rem;
+            width: 100%;
+        }
+        .userMessage,
         .setting{
-            margin-top: auto;
-            // margin-bottom: .7rem;
-            margin-left:0;
-            height: 22rem;
+           border: solid $bordergrey 1px; 
+        }
+        .newMember{
+            border-left: none;
+            border-right: none;
+            border-bottom: none;
         }
         .activity{
-            margin:0;
+            border-right: none;
+            border-bottom: none;
         }
+        .userMessage{
+            border-left:none;
+            border-right:none;
+            border-bottom: none;
+        }
+        .setting{
+            border-right:none;
+            border-bottom: none;
+        }
+
         .recentAct{
             margin-top:2.2rem;
         }

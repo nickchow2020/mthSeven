@@ -1,9 +1,14 @@
-.userMessage{
-    height: 25rem;
+.userMessage,
+.setting{
+    height: 27rem;
     width: 100%;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
 }
-.titleMessage{
+.titleMessage,
+.settingTitle{
     font-family: "kenyan-rgnit";
     color:$thirdtextColor;
     font-size: 1.3rem;
